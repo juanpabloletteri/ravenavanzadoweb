@@ -5,6 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { P1Component } from './paginas/p1/p1.component';
 import { P2Component } from './paginas/p2/p2.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +21,9 @@ import { P2Component } from './paginas/p2/p2.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule, MatInputModule, MatSelectModule, MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
